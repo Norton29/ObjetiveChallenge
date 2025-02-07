@@ -14,7 +14,7 @@ public class Transacao {
 
     private Conta conta;
 
-    private TipoTransacaoEnum tipoTransacao;
+    private TipoTransacaoEnum formaPagamento;
 
     private Float valor;
     

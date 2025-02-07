@@ -1,8 +1,8 @@
 package com.nff.objective_challenge.infra.config.execeptions;
 
-public class NotFoundExecption extends RuntimeException {
+public class NotFoundException extends RuntimeException {
 
-    public NotFoundExecption(String message) {
+    public NotFoundException(String message) {
         super(message);
     }
 

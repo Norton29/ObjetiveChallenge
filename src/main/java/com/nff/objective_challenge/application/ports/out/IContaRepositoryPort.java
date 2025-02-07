@@ -8,6 +8,6 @@ public interface IContaRepositoryPort {
 
     Conta buscarPorNumeroConta(Integer numeroConta);
 
-  
-    
+    void update(Conta conta, Float saldo);
+
 }

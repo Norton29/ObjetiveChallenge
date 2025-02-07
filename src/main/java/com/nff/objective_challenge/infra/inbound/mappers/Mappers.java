@@ -8,6 +8,7 @@ import com.nff.objective_challenge.application.core.domain.Transacao;
 import com.nff.objective_challenge.infra.inbound.dto.ContaDTO;
 import com.nff.objective_challenge.infra.inbound.dto.TransacaoDTO;
 import com.nff.objective_challenge.infra.inbound.model.ContaModel;
+import com.nff.objective_challenge.infra.inbound.model.TransacaoModel;
 
 import lombok.AllArgsConstructor;
 
@@ -35,6 +36,14 @@ public class Mappers {
 
     public Transacao transacaoDtoToTransacao(TransacaoDTO transacaoDTO) {
         return modelMapper.map(transacaoDTO, Transacao.class);
+    }
+
+    public TransacaoModel transacaoToTransacaoModel(Transacao transacao) {
+        return modelMapper.map(transacao, TransacaoModel.class);
+    }
+
+    public Transacao transacaoModelToTransacao(TransacaoModel transacaoModel) {
+        return modelMapper.map(transacaoModel, Transacao.class);
     }
     
 }
