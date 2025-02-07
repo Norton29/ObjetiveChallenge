@@ -6,6 +6,8 @@ public interface IContaRepositoryPort {
 
     Conta save(Conta conta);
 
+    Conta buscarPorNumeroConta(Integer numeroConta);
+
   
     
 }

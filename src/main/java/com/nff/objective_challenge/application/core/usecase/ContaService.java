@@ -17,4 +17,9 @@ public class ContaService implements IContaServicePort {
     return contaRepositoryPort.save(conta);
   }
 
+  @Override
+  public Conta buscarPorNumeroConta(Integer numeroConta) {
+    return contaRepositoryPort.buscarPorNumeroConta(numeroConta);
+  }
+
 }

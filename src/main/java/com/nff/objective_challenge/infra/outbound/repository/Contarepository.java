@@ -8,6 +8,8 @@ import com.nff.objective_challenge.infra.inbound.model.ContaModel;
 @Repository
 public interface Contarepository extends JpaRepository<ContaModel, Long> {
 
+    ContaModel findByNumeroConta(Integer numeroConta);
+
     
     
 }

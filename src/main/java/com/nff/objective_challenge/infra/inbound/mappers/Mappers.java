@@ -4,7 +4,9 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
 import com.nff.objective_challenge.application.core.domain.Conta;
+import com.nff.objective_challenge.application.core.domain.Transacao;
 import com.nff.objective_challenge.infra.inbound.dto.ContaDTO;
+import com.nff.objective_challenge.infra.inbound.dto.TransacaoDTO;
 import com.nff.objective_challenge.infra.inbound.model.ContaModel;
 
 import lombok.AllArgsConstructor;
@@ -29,6 +31,10 @@ public class Mappers {
 
     public Conta contaModelToConta(ContaModel contaModel) {
         return modelMapper.map(contaModel, Conta.class);
+    }
+
+    public Transacao transacaoDtoToTransacao(TransacaoDTO transacaoDTO) {
+        return modelMapper.map(transacaoDTO, Transacao.class);
     }
     
 }
